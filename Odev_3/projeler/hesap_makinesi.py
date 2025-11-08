@@ -11,6 +11,9 @@ while(cıkıs==0):
     #sayıları ve ıslemı aldık
     sayi1=int(input("ilk sayiyi girin= "))
     sayi2=int(input("ikinci sayiyi girin= "))
+
+    #ikinci sayi 0 ise hata versin
+        
     islem=input("islemi girin ")
     if islem=='+':
         print('sonuc = ',sayi1+sayi2)
@@ -21,6 +24,11 @@ while(cıkıs==0):
         print('sonuc = ',sayi1*sayi2)
 
     if islem=='/':
+        #sifira bolme kontrolu
+        if sayi2==0:
+            print('sifira bolunemez')
+            continue
+                 
         print('sonuc = ',sayi1/sayi2)
 
 #0 yazılmadıgı surece donguden cıkacak
